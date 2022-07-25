@@ -50,106 +50,199 @@
             </ul>
         </div>
     </header>
+
     <!-- Посилання верхній рівень -->
     <!-- prt - portfolio -->
-    <main class="prt-main">
-        <section class="prt-section section">
+    <main>
+        <section class="section portfolio">
             <!-- Прихований заголовок -->
             <div class="conteiner portfolio">
                 <h1 hidden>Портфоліо</h1>
-                <ul class="prt-filter-list list">
-                    <li class="prt-btn-item">
-                        <button class="prt-btn current-prt" type="button">Все</button>
-                    </li>
-                    <li class="prt-btn-item">
-                        <button class="prt-btn" type="button">Веб-сайти</button>
-                    </li>
-                    <li class="prt-btn-item">
-                        <button class="prt-btn" type="button">Додатки</button>
-                    </li>
-                    <li class="prt-btn-item">
-                        <button class="prt-btn" type="button">Дизайн</button>
-                    </li>
-                    <li class="prt-btn-item">
-                        <button class="prt-btn" type="button">Маркетинг</button>
-                    </li>
-                </ul>
+                <div class="container control-panel">
+                    <button class="button button-filter" type="button">Все</button>
+                    <button class="button button-filter" type="button">Веб-сайти</button>
+                    <button class="button button-filter" type="button">Додатки</button>
+                    <button class="button button-filter" type="button">Дизайн</button>
+                    <button class="button button-filter" type="button">Маркетинг</button>
+                </div>
                 <!-- Портфоліо бокс картинок 3х3-->
-                <h2 class="visually-hidden">Портфолио</h2>
-                <ul class="prt-box-list list">
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img1.jpg" alt="Ноутбук" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Технокряк</h3>
-                            <p class="prt-box-text">Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img2.jpg" alt="Баскетбол" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                            <p class="prt-box-text">Дизайн</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img3.jpg" alt="Напис ресторан морської їжі"
-                            width="370" height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Ресторан <span lang="en">Seafood</span></h3>
-                            <p class="prt-box-text">Додаток</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img4.jpg" alt="Навушники" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">Prime</span></h3>
-                            <p class="prt-box-text">Маркетинг</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img5.jpg" alt="Коробки" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">Boxes</span></h3>
-                            <p class="prt-box-text">Додаток</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img6.jpg" alt="Монітор" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle" lang="en">Inspiration has no Borders</h3>
-                            <p class="prt-box-text">Веб-сайт</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img7.jpg" alt="Книжка" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Видання <span lang="en">Limited Edition</span></h3>
-                            <p class="prt-box-text">Дизайн</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img8.jpg" alt="Бірка" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">LAB</span></h3>
-                            <p class="prt-box-text">Маркетинг</p>
-                        </div>
-                    </li>
-                    <li class="list prt-box-item">
-                        <img class="prt-box-btn" src="./images/portfolio/img9.jpg" alt="Друккує на ноутбуці" width="370"
-                            height="294" />
-                        <div class="prt-item-desc">
-                            <h3 class="prt-box-subtitle" lang="en">Growing Business</h3>
-                            <p class="prt-box-text">Додаток</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="portfolio-products">
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img1.jpg" alt="Ноутбук" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                            сервісів. Все це дозволить відвідувачу отримати
+                                            вичерпні відомості про компанію чи приватну особу.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Технокряк</h3>
+                                        <p class="font-fact-descr">Веб-сайт</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img2.jpg" alt="Баскетбол" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Постер <span lang="en">New Orlean vs Golden</span>
+                                        </h3>
+                                        <p class="prt-box-text">Дизайн</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img3.jpg" alt="Напис ресторан морської їжі" width="370"
+                                        height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Ресторан <span lang="en">Seafood</span></h3>
+                                        <p class="font-fact-descr">Додаток</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img4.jpg" alt="Навушники" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Проєкт <span lang="en">Prime</span></h3>
+                                        <p class="font-fact-descr">Маркетинг</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img5.jpg" alt="Коробки" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Проєкт <span lang="en">Boxes</span></h3>
+                                        <p class="font-fact-descr">Додаток</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img6.jpg" alt="Монітор" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name" lang="en">Inspiration has no Borders</h3>
+                                        <p class="font-fact-descr">Веб-сайт</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img7.jpg" alt="Книжка" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Видання <span lang="en">Limited Edition</span></h3>
+                                        <p class="font-fact-descr">Дизайн</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img8.jpg" alt="Бірка" width="370" height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name">Проєкт <span lang="en">LAB</span></h3>
+                                        <p class="font-fact-descr">Маркетинг</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="product">
+                            <a href="">
+                                <div class="product-thumb">
+                                    <img src="./images/portfolio/img9.jpg" alt="Друккує на ноутбуці" width="370"
+                                        height="294" />
+                                    <div class="product-overlay">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta
+                                            explicabo. Deleniti maxime voluptatum soluta delectus, inventore harum
+                                            dolorem ullam perspiciatis recusandae corrupti! Iusto maiores in sit
+                                            molestiae numquam soluta.
+                                        </p>
+                                    </div>
+                                    <div class="product-descr">
+                                        <h3 class="font-fact-name" lang="en">Growing Business</h3>
+                                        <p class="font-fact-descr">Додаток</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
