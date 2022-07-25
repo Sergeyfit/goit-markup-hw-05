@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!-- Шапка сторінки -->
+    <header class="header">
+        <!-- Меню навігайцій для наступних сторінок -->
+        <div class="header-conteiner conteiner">
+            <a class="header-logo link" lang="en" href="./index.html">Web<span class="logo-word">Studio</span></a>
+            <nav class="header-nav">
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a class="header-link link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link current" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link" href="./">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact-list list">
+                <li class="contact-item">
+                    <a class="contact-link link" href="mailto:info@devstudio.com"><svg class="icon-mail icon" width="16"
+                            height="12">
+                            <use href="./images/icons.svg#mail"></use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="contact-item">
+                    <a class="contact-link link" href="tel:+380961111111"><svg class="icon-phone icon" width="10"
+                            height="16">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Посилання верхній рівень -->
+    <!-- prt - portfolio -->
+    <main class="prt-main">
+        <section class="prt-section section">
+            <!-- Прихований заголовок -->
+            <div class="conteiner portfolio">
+                <h1 hidden>Портфоліо</h1>
+                <ul class="prt-filter-list list">
+                    <li class="prt-btn-item">
+                        <button class="prt-btn current-prt" type="button">Все</button>
+                    </li>
+                    <li class="prt-btn-item">
+                        <button class="prt-btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="prt-btn-item">
+                        <button class="prt-btn" type="button">Додатки</button>
+                    </li>
+                    <li class="prt-btn-item">
+                        <button class="prt-btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="prt-btn-item">
+                        <button class="prt-btn" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <!-- Портфоліо бокс картинок 3х3-->
+                <h2 class="visually-hidden">Портфолио</h2>
+                <ul class="prt-box-list list">
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img1.jpg" alt="Ноутбук" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Технокряк</h3>
+                            <p class="prt-box-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img2.jpg" alt="Баскетбол" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                            <p class="prt-box-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img3.jpg" alt="Напис ресторан морської їжі"
+                            width="370" height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Ресторан <span lang="en">Seafood</span></h3>
+                            <p class="prt-box-text">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img4.jpg" alt="Навушники" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">Prime</span></h3>
+                            <p class="prt-box-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img5.jpg" alt="Коробки" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">Boxes</span></h3>
+                            <p class="prt-box-text">Додаток</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img6.jpg" alt="Монітор" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle" lang="en">Inspiration has no Borders</h3>
+                            <p class="prt-box-text">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img7.jpg" alt="Книжка" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Видання <span lang="en">Limited Edition</span></h3>
+                            <p class="prt-box-text">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img8.jpg" alt="Бірка" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle">Проєкт <span lang="en">LAB</span></h3>
+                            <p class="prt-box-text">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="list prt-box-item">
+                        <img class="prt-box-btn" src="./images/portfolio/img9.jpg" alt="Друккує на ноутбуці" width="370"
+                            height="294" />
+                        <div class="prt-item-desc">
+                            <h3 class="prt-box-subtitle" lang="en">Growing Business</h3>
+                            <p class="prt-box-text">Додаток</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сторінки -->
+    <footer class="footer">
+        <div class="conteiner">
+            <div class="contact-div">
+                <a class="footer-logo link" lang="en" href="./index.html">Web<span
+                        class="logo-word-footer">Studio</span></a>
+                <address class="address">
+                    <ul class="address-list list">
+                        <li class="address-item">
+                            <a class="address-contact-map link" href="https://goo.gl/maps/Bq6WexbLNgEqduPN9"
+                                target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="address-item">
+                            <a class="address-contact link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address-item">
+                            <a class="address-contact link" href="tel:+380961111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-socials-div">
+                <h3 class="footer-socials-header">Приєднуйтесь</h3>
+                <ul class="socials list">
+                    <li class="socials-item">
+                        <a class="socials-link link" href=" ">
+                            <svg class="socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link link" href=" ">
+                            <svg class="socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link link" href=" ">
+                            <svg class="socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link link" href=" ">
+                            <svg class="socials-icon" width="20" height="20">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
