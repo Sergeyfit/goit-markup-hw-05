@@ -57,7 +57,7 @@ ul {
   overflow: hidden;
 }
 
-/* ---------------  HEADER  ----------------*/
+/* HEADER */
 .page-header {
   display: flex;
   align-items: center;
@@ -70,7 +70,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px dashed red; */
 }
 
 .header {
@@ -78,22 +77,20 @@ ul {
   align-items: center;
 }
 
-.navigation {
+.header-list {
   display: flex;
   list-style: none;
 }
 
-.navigation li:not(:first-child) {
+.header-list li:not(:first-child) {
   margin-left: 50px;
-  /* outline: 1px dashed green; */
 }
 
-.navigation li:first-child {
+.header-list li:first-child {
   margin-left: 93px;
-  /* outline: 1px dashed green; */
 }
 
-.font-nav {
+.header-link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -101,24 +98,22 @@ ul {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc() 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  /* outline: 1px dashed green; */
-
   transition: color var(--duration) var(--timing-function);
 }
 
-.font-nav:hover,
-.font-nav:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--blue-color);
 }
 
-.font-nav.current {
+.header-link.current {
   color: var(--blue-color);
 }
 
-.font-nav.current::after {
+.header-link.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -130,7 +125,7 @@ ul {
   display: inline-block;
 }
 
-.font-contacts {
+.contact-link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -140,12 +135,11 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-color);
-
   transition: color var(--duration) var(--timing-function);
 }
 
-.font-contacts:hover,
-.font-contacts:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--blue-color);
 }
 
@@ -153,15 +147,13 @@ ul {
   display: flex;
   list-style: none;
   margin-left: auto;
-  /* outline: 1px dashed green; */
 }
 
 .contacts li:not(:first-child) {
   margin-left: 30px;
-  /* outline: 1px dotted green; */
 }
 
-.font-contacts .icon {
+.contact-link .icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -171,9 +163,9 @@ ul {
   fill: currentColor;
 }
 
-/* ----------------  HERO  -----------------*/
+/* hero */
 
-.hero {
+.section-hero {
   padding-top: 200px;
   text-align: center;
 
@@ -192,7 +184,7 @@ ul {
   background-position: center;
 }
 
-.font-hero {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -212,7 +204,7 @@ ul {
   border: none;
 }
 
-.button-order {
+.hero-btn {
   width: 200px;
   margin-top: 30px;
   background: var(--blue-color);
@@ -222,11 +214,11 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button-order:hover {
+.hero-btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
 }
 
-/* ----------- ОКНО ЗАКАЗАТЬ УСЛУГУ ---------- */
+/* ЗАмолвення послуг */
 .backdrop {
   position: fixed;
   top: 0;
@@ -234,7 +226,6 @@ ul {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-
   transition: opacity 500ms var(--timing-function);
 }
 
@@ -249,7 +240,6 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transition: transform 500ms var(--timing-function);
 }
 
@@ -280,25 +270,23 @@ ul {
   height: 11px;
 }
 
-/* ------------  ПРЕИМУЩЕСТВА  -------------*/
+/* Чим кращі */
 .section {
   padding-top: 94px;
-  /* outline: 1px dashed blue; */
 }
 
-.benefits {
+.skils-list {
   display: flex;
   list-style: none;
   margin-left: -30px;
 }
 
-.benefits li {
+.skils-list li {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  /* outline: 1px dashed green; */
 }
 
-.benefits .item-thumb {
+.skils-list .skils-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,19 +297,21 @@ ul {
   border-radius: 4px;
 }
 
-.benefits .item {
+.skils-list .item {
   width: 70px;
   height: 70px;
 }
 
-.font-fact-name {
+.skils-subtitle,
+.prt-box-subtitle {
   font-size: 14px;
   line-height: 1.14;
   text-align: left;
   text-transform: uppercase;
 }
 
-.font-fact-descr {
+.skils-text,
+.prt-box-text {
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
@@ -329,9 +319,9 @@ ul {
   margin-top: 10px;
 }
 
-/* ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------*/
+/* Чим ми займаємося */
 
-.what-we-do {
+.section-gallery {
   padding-bottom: 94px;
 }
 
@@ -340,19 +330,17 @@ ul {
   text-align: center;
 }
 
-.whatwedo-images {
+.gallery-list {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  /* outline: 1px dashed green; */
 }
 
-.whatwedo-thumb {
+.gallery-item {
   position: relative;
-  /* outline: 1px dashed red; */
 }
 
-.whatwedo-label {
+.gallery-label {
   position: absolute;
   bottom: 0;
   padding-top: 27px;
@@ -366,23 +354,22 @@ ul {
   text-transform: uppercase;
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
-  /* outline: 2px dashed blue; */
 }
-/* -------------  НАША КОМАНДА  -------------*/
-.command {
+
+/* Наша Команда */
+.section-teams {
   background: #f5f4fa;
   padding-bottom: 94px;
 }
 
-.people {
+.teams-list {
   display: flex;
   justify-content: center;
   list-style: none;
   margin-top: 50px;
-  /* outline: 1px dashed green; */
 }
 
-.person {
+.teams-item {
   background: #ffffff;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -391,22 +378,22 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.person:first-child {
+.teams-item:first-child {
   margin-left: 0;
 }
 
-.person-descr {
+.team-images-div {
   padding: 30px 0;
 }
 
-.font-name {
+.teams-subtitle {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   line-height: 1.19;
 }
 
-.font-job {
+.teams-text {
   font-size: 16px;
   text-align: center;
   line-height: 1.19;
@@ -414,14 +401,14 @@ ul {
   margin-top: 10px;
 }
 
-.person .joinus-social {
+.teams-item .joinus-social {
   width: 206px;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.person .social-link {
+.teams-item .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,28 +416,26 @@ ul {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  /* outline: 1px dashed green; */
   color: #afb1b8;
   transition: color var(--duration) var(--timing-function),
     background-color var(--duration) var(--timing-function);
 }
 
-.person .social-link:hover,
-.person .social-link:focus {
+.teams-item .social-link:hover,
+.teams-item .social-link:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
 }
 
-/* -------- Постоянные клиенты ------------ */
-.clients-list {
+/* Постійні клієнти */
+.customers-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin-top: 50px;
-  /* outline: 1px dashed green; */
 }
 
-.client {
+.customers {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,18 +444,17 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
-
   transition: color var(--duration) var(--timing-function),
     border-color var(--duration) var(--timing-function);
 }
 
-.client:hover,
-.client:focus {
+.customers:hover,
+.customers:focus {
   color: var(--blue-color);
   border-color: var(--blue-color);
 }
 
-/* --------------  FOOTER  --------------- */
+/* FOOTER */
 .footer {
   padding: 60px 0;
   background: var(--accent-bcg-color);
@@ -480,7 +464,7 @@ ul {
   display: flex;
 }
 
-.footer-add {
+.contact-div {
   width: 230px;
 }
 
@@ -520,7 +504,6 @@ ul {
   width: 206px;
   margin-left: 70px;
   margin-top: 12px;
-  /* outline: 1px dashed red; */
 }
 
 .joinus {
@@ -537,7 +520,6 @@ ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  /* outline: 2px dashed green; */
 }
 
 .footer-joinus .social-link {
@@ -549,8 +531,6 @@ ul {
   border-radius: 50%;
   color: var(--white-color);
   background: rgba(255, 255, 255, 0.1);
-  /* outline: 1px dashed green; */
-
   transition: background-color var(--duration) var(--timing-function);
 }
 
@@ -559,8 +539,9 @@ ul {
   background: var(--blue-color);
 }
 
-/* -------------- PORTFOLI0  -------------- */
-.portfolio {
+/* Портфоліо */
+.section-customers,
+.prt-section {
   padding-bottom: 94px;
 }
 
@@ -574,7 +555,6 @@ ul {
   margin-right: 8px;
   padding: 0 22px;
   background: #f5f4fa;
-
   transition: background-color var(--duration) var(--timing-function),
     color var(--duration) var(--timing-function);
 }
@@ -587,42 +567,39 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-products {
+.prt-box {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
   list-style: none;
-  /* outline: 1px dashed orangered; */
 }
 
-.product {
+.prt-box-item {
   border: 1px solid #eeeeee;
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  /* outline: 1px dashed green; */
 }
 
-.product-thumb {
+.prt-box-thumb {
   position: relative;
   overflow: hidden;
-  /* outline: 1px dashed red; */
 }
 
-.product a {
+.prt-box-item a {
   display: block;
   text-decoration: none;
   color: var(--main-text-color);
 }
 
-.product a:hover,
-.product a:focus {
+.prt-box-item a:hover,
+.prt-box-item a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-overlay {
+.prt-box-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -634,25 +611,23 @@ ul {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 00.03em;
-
   overflow: hidden;
-
   transform: translatey(100%);
   transition: transform var(--duration) var(--timing-function);
 }
 
-.product a:hover .product-overlay {
+.prt-box-item a:hover .prt-box-overlay {
   transform: translateY(0);
 }
 
-.product img,
+.prt-box-item img,
 .customers img,
-.person img,
-.whatwedo-images img {
+.teams-item img,
+.gallery-list img {
   display: block;
   max-width: 100%;
 }
 
-.product-descr {
+.prt-box-descr {
   padding: 20px 24px;
 }
